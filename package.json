@@ -1,0 +1,24 @@
+{
+  "name": "conversioncenter",
+  "version": "1.0.0",
+  "description": "This website is a free online unit converter, temperature converter, date converter, PDF converter and HS Codes browser. Our converter is easy and simple to use. Our website is international and you can access from any part of the world. You are just few clicks away from the conversion result you are looking for.You need to browse through the categories and select the required one.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "Conversion",
+    "Center"
+  ],
+  "author": "Mohamed M.Ataout",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "method-override": "^2.3.10"
+  }
+}

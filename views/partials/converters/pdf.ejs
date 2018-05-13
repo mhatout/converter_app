@@ -1,0 +1,39 @@
+     <!-- PDF converter part -->
+      <h1 id='pdf_header' class="ui header orange">Convert, Export & Merge PDFs in Seconds</h1>
+      <p class='more'>PDF is known as Portable Document Format is a file format used to present and share all the elements of a document reliably, independent of software, hardware, or operating system. PDF files are created by Adobe Acrobat, Acrobat Capture, etc. PDFs can contain links and buttons, form fields, audio, video, and business logic. If you see a file that ends with .pdf, which means it's a PDF file.</p>
+      <a id='pdf_btn' class="ui large button">Try it now</a>
+      
+      <div id="pdf_segment" class="ui raised segment hide">
+          <div class='button_container'>
+           <button id="to_pdf_btn" class="fluid ui button">Convert To PDF</button>
+           <button id="from_pdf_btn" class="fluid ui button">Convert From PDF</button>
+           <button id="merge_pdf_btn" class="fluid ui button">Merge PDF</button>
+          </div>
+          <% include pdfConverters/merge %>
+          <div id="to_pdf_segment" class="ui raised segment hide">
+            <div class='button_container'>
+                <button id="image_pdf_btn" class="fluid ui button">Image to PDF</button>
+                <button id="word_pdf_btn" class="fluid ui button">Word to PDF</button>
+                <button id="excel_pdf_btn" class="fluid ui button">Excel to PDF</button>
+                <button id="power_pdf_btn" class="fluid ui button">Powerpoint to PDF</button>
+            </div>    
+          </div>
+          <div id="from_pdf_segment" class="ui raised segment hide">
+            <div class='button_container'>
+                <button id="pdf_image_btn" class="fluid ui button">PDF to Image</button>
+                <button id="pdf_word_btn" class="fluid ui button">PDF to Word</button>
+                <button id="pdf_excel_btn" class="fluid ui button">PDF to Excel</button>
+                <button id="pdf_power_btn" class="fluid ui button">PDF to Powerpoint</button>
+            </div>    
+          </div>
+          <% include pdfConverters/image_pdf_segment %>
+          <% include pdfConverters/word_pdf_segment %>
+          <% include pdfConverters/excel_pdf_segment %>
+          <% include pdfConverters/power_pdf_segment %>
+          <% include pdfConverters/pdf_image_segment %>
+          <% include pdfConverters/pdf_word_segment %>
+          <% include pdfConverters/pdf_excel_segment %>
+          <% include pdfConverters/pdf_power_segment %>
+      </div>
+      
+          

@@ -1,0 +1,76 @@
+      <!-- date converter part -->
+      
+      <h1 id='date_header' class="ui header orange">Date Converter</h1>
+      <p class='more'>Date Converter from <strong>Conversion Centre</strong>, is mainly to convert the date from AD Gregorian (ميلادي) to Hijri (هجري). The values inside the boxes are default values; you have to enter your value inside each corresponding box for Day, Month, and Year. The results will be displayed in the other cases to show you the exact date you are looking for. Inside the box, today you can see the day of the week. If you want to find another date, please click first on Reset bottom, and then enter the new values.</p>
+      <a id="date_btn" class="ui large button">Try it now</a>
+      
+      <div id="date_modal" class="ui basic modal">
+      <div class="ui segments">
+        <div class="ui segment">
+          <h2 class="orange"><strong>Convert the date from Gregorian to Hijri </strong></h2>
+          <hr />
+          
+          <table class="ui definition table">
+            <thead>
+             <tr><th></th>
+              <th>Day</th>
+              <th>Month</th>
+              <th>Year</th>
+             </tr></thead>
+            <tbody>
+             <tr>
+              <td>Gregorian</td>
+              <td><div class="ui form">
+                    <div class="field">
+                     <input type="number" class="date" name="CDay"  required placeholder="01"  id="CDay" size="20" maxlength="2" autofocus />
+                    </div>
+                  </div></td>
+              <td><div class="ui form">
+                    <div class="field">
+                     <input type="number" class="date" name="CMonth" required placeholder="01" id="CMonth" size="20" maxlength="2" />
+                    </div>
+                   </div></td>
+              <td><div class="ui form">
+                    <div class="field">
+                     <input type="number" class="date" name="CYear" required placeholder="1900"  id="CYear" size="20" maxlength="4" />
+                    </div>
+                   </div></td>
+             </tr>
+             <tr>
+              <td>Hijri</td>
+              <td><div class="ui form">
+                    <div class="field">
+                     <input type="number"  class="date"  required placeholder="01"  id="HDay" size="20" maxlength="2" autofocus />
+                    </div>
+                  </div></td>
+              <td><div class="ui form">
+                    <div class="field">
+                     <input type="number"  class="date" required placeholder="01" id="HMonth" size="20" maxlength="2" />
+                    </div>
+                   </div></td>
+              <td><div class="ui form">
+                    <div class="field">
+                     <input type="number"  class="date" required placeholder="1400"  id="HYear" size="20" maxlength="4" />
+                    </div>
+                   </div></td>
+             </tr>
+            </tbody></table>
+            <div class="ui form">
+               <div class="three fields">
+                <div class="field">
+                  <label>Day</label>
+                  <input placeholder="Day" class="date" readonly type="text" name="wd" size="60" id="wd">
+                </div>
+                <div class="field">
+                  <label>Julian</label>
+                  <input placeholder="Julian" class="date" readonly type="text" name="JD"  size="60" id="JD">
+                </div>
+                <div class="field">
+                 <label>Reset</label>
+                 <input id='reset' type='reset' value='reset' class="fluid ui button" />
+                </div> 
+              </div>
+           </div>
+        </div>
+      </div>      
+     </div>

@@ -1,0 +1,40 @@
+     <!-- Currency converter part -->
+
+     <h1 id='currency_header' class="ui header orange">Currency Converter</h1>
+      <p class='more'><strong>Conversion Center's</strong> currency converter allows you to check how much you should get when you convert your currency into another. The currency converter shows you the true mid-market exchange rate, also known as the REAL rate. It's the rate you will find on Google, XE and Yahoo, so its completely independent of banks or currency exchange providers. Which means no hidden charges.</p>
+      <a id="curr_btn" class="ui large button">Try it now</a>
+      
+      <div id='curr_segment' class="ui raised segment hide">
+        <form class="ui form">
+          <h2 class="ui dividing header orange">Currency Converter</h2>
+          <div class="two fields">
+            <div class="field">
+              <div id='from_curr_dropdown' class="ui selection dropdown" >
+                <input type="hidden" id='from_curr' name="from_curr" >
+                  <i class="dropdown icon"></i>
+               <div class="default text">From</div>
+               <div class="menu curr_menu"></div>
+              </div>            
+            </div>
+            <div class="field">
+              <div id='to_curr_dropdown' class="ui selection dropdown">
+                <input type="hidden" id='to_curr' name="to_curr" >
+                  <i class="dropdown icon"></i>
+               <div class="default text">To</div>
+               <div class="menu curr_menu"></div>
+              </div>    
+          </div>
+          </div>
+         <div class="three fields">
+          <div class="four wide field">
+              <input type="number" id="from_curr_amount" name="from_curr_amount" placeholder="Amount">      
+          </div> 
+          <div class="four wide field">
+              <input type="number" id="to_curr_amount" name="to_curr_amount" placeholder="Result" readonly>      
+          </div>
+          <div class="eight wide field">
+           <button type="submit" class="fluid ui button" id="curr_submit_btn" >Convert</button>      
+          </div> 
+        </div>
+      </form>  
+    </div>      

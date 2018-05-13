@@ -1,0 +1,122 @@
+<% include partials/header%>
+
+<!-- Page Contents -->
+
+<div id="mainContent">
+<div class="pusher">
+  <div id='intro' class="ui vertical masthead center aligned segment">
+    	<div class="ui secondary massive top menu container">
+      <a style="color:white" class="item">
+        Site Logo
+      </a>
+   <div id='spreadItem' class="ui secondary right menu">
+     <a href="#hs_header" class="item"><i class="file alternate outline icon"></i> Hs Codes</a>
+     <a href="#weight_header" class="item"><i class="balance scale icon"></i> Weight & Mass</a>
+     <a href="#length_header" class="item"><i class="map signs icon"></i> Length & Distance</a>
+     <a href="#capacity_header" class="item"><i class="archive  icon"></i> Capacity & Volume</a>
+     <a href="#temp_header" class="item"><i class="thermometer three quarters icon"></i> Temperature</a>
+     <a href="#pdf_header" class="item"><i class="file pdf outline icon"></i> PDF Converter</a>
+     <a href="#date_header" class="item"><i class="calendar icon"></i> Date Converter</a>
+     <a href="#currency_header" class="item"><i class="dollar sign icon"></i> Currency Converter</a>
+     <a href="#audio_video_header" class="item"><i class="film icon"></i> Media Converter</a>
+   </div>    
+   <div id='dropdownItem' class="ui floating dropdown link item">
+    <span class="text"><strong>Converters</strong></span>
+    <i id="loading_icon" class="sync alternate icon"></i>
+    <div id='dropdown_menu' class="menu">
+      <a href="#hs_header" id='menu_item7' class="item"><i class="file alternate outline icon"></i> Hs Codes</a>
+      <hr /> 
+      <a href="#weight_header" id='menu_item1' class="item"><i class="balance scale icon"></i> Weight & Mass</a>
+      <a href="#length_header" id='menu_item2' class="item"><i class="map signs icon"></i> Length & Distance</a>
+      <a href="#capacity_header" id='menu_item6' class="item"><i class="archive  icon"></i> Capacity & Volume</a>
+      <hr />  
+      <a href="#temp_header" id='menu_item3' class="item"><i class="thermometer three quarters icon"></i> Temperature</a>
+      <hr />
+      <a href="#pdf_header" id='menu_item4' class="item"><i class="file pdf outline icon"></i> PDF Converter</a>
+      <a href="#date_header" id='menu_item5' class="item"><i class="calendar icon"></i> Date Converter</a>
+      <hr/>
+      <a href="#currency_header" class="item"><i class="dollar sign icon"></i> Currency Converter</a>
+      <hr />
+      <a href="#audio_video_header" class="item"><i class="film icon"></i> Media Converter</a>
+    </div>
+   </div>
+</div>
+
+
+    <div class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s" id='intro_text'>
+      <h1>Conversion Tables and Instant Measurement Conversion</h1>
+      <h2>Simplicity & convenience</h2>
+    </div>
+  </div>
+
+  <div id='second_part' class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h1 class="ui header orange">Welcome to <strong>Conversion Centre</strong></h1>
+          <p class="outer_paragraph more">This website is a free online unit converter, temperature converter, date converter, PDF converter and HS Codes browser. Our converter is easy and simple to use. Our website is international and you can access from any part of the world. You are just few clicks away from the conversion result you are looking for.You need to browse through the categories and select the required one.
+           <br />
+           <br />
+          In the case, you are looking for unit conversion; you need to input the value behind the source data and the result will appear automatically in the appropriate boxes.
+           <br />
+           <br />
+          If you need to use the PDF converter, you should upload the source PDF documents to our website to get the required format you need.
+           <br /><br />
+          A unit is defined as a measuring of quantity applied differently by various parts of the world. Alternative quantities will be expressed as a multiple of the unit.
+           <br /><br />
+          Currently, the worldwide customary of measuring is that the SI of Units (SI), is the advanced form of the metric system. Different systems of units have completely different selections of base units. Base units are unit sets of units wherever no subset amount will be expressed in terms of the others.  Within the SI Units, there are a unit seven base units:  metric weight unit, metre, candela, second, ampere, kelvin and mole.</p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="/img/second_img.jpg" class="ui large bordered rounded image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id='third_part' class="ui vertical stripe segment">
+   <div class="ui equal width grid">
+     <div id='left_ad' class="left floated column">
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+     </div>  
+    <div id='main_body' class="twelve wide column"> 
+    <div id="upper_ad" class="ui leaderboard test ad center_ad" data-text="Leaderboard"></div>
+    <div class="ui mobile leaderboard test ad center_ad" data-text="Mobile Leaderboard"></div>
+    <div class="ui text container">
+      <h4 class="ui horizontal header divider">HS Codes</h4>    
+      <% include partials/converters/hs_codes%>
+      <h4 class="ui horizontal header divider">Weight Converter</h4>    
+      <% include partials/converters/weight%>
+      <h4 class="ui horizontal header divider">Length Converter</h4>
+      <% include partials/converters/length%>
+      <h4 class="ui horizontal header divider">Capacity Converter</h4>
+      <% include partials/converters/capacity%>
+      <h4 class="ui horizontal header divider">Temperature Converter</h4>
+      <% include partials/converters/temperature%>
+      <h4 class="ui horizontal header divider">PDF Converter</h4>
+      <% include partials/converters/pdf%>
+      <h4 class="ui horizontal header divider">Date Converter</h4>
+      <% include partials/converters/date%>
+      <h4 class="ui horizontal header divider">Currency Converter</h4>
+      <% include partials/converters/currency%>
+      <h4 class="ui horizontal header divider">Video & Audio Converter</h4>
+      <% include partials/converters/video_audio%>
+    </div>
+    <div id="lower_ad" class="ui leaderboard test ad center_ad" data-text="Leaderboard"></div>
+    <div class="ui mobile leaderboard test ad center_ad" data-text="Mobile Leaderboard"></div>
+   </div>
+    <div id='right_ad' class="right floated column">
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+      <div class="ui skyscraper test ad" data-text=" Skyscraper"></div>
+    </div>  
+   </div>  
+  </div>
+  
+<% include partials/scroll_up_button %>
+  <!--end of content div-->
+<% include partials/footer%>
