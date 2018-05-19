@@ -1,4 +1,6 @@
 /* global $*/
+/* global URL*/
+import '../styles/myStyle.css';
 
  $(document).ready(()=>{
 	//Check to see if the window is top if not then display button
@@ -73,12 +75,22 @@
     $('#hs_btn').on('click', ()=>$("#hs_segment").slideToggle());
     $('#curr_btn').on('click', ()=>$("#curr_segment").slideToggle());
     $('#audio_video_btn').on('click', ()=>$("#audio_video_segment").slideToggle());
-    $('#yt_download_btn').on('click', (e)=>{
+    $('#vd_download_btn').on('click', (e)=>{
     	e.preventDefault();
-    	let url_string = $('#yt_link_input').val(); //window.location.href
+    	$('#yt_downloader').empty();
+    	let url_string = $('#yt_link_input1').val(); //window.location.href
         let url = new URL(url_string);
         let video_id = url.searchParams.get("v");
         $('#yt_downloader').append(`<iframe class="button-api-frame" src="https://www.yt2mp3s.me/@api/button/videos/${video_id}" width="100%" height="100%" allowtransparency="true" scrolling="yes" style="border:none"></iframe>`);
+        $('#yt_downloader').slideDown();
+    });
+    $('#ad_download_btn').on('click', (e)=>{
+    	e.preventDefault();
+    	$('#yt_downloader').empty();
+    	let url_string = $('#yt_link_input2').val(); //window.location.href
+        let url = new URL(url_string);
+        let video_id = url.searchParams.get("v");
+        $('#yt_downloader').append(`<iframe class="button-api-frame" src="https://www.yt2mp3s.me/@api/button/mp3/${video_id}" width="100%" height="100%" allowtransparency="true" scrolling="yes" style="border:none"></iframe>`);
         $('#yt_downloader').slideDown();
     });
     $('#to_pdf_btn').on('click', ()=>{$("#from_pdf_segment, #merge_pdf_segment, .pdf_segment").slideUp(); $("#to_pdf_segment").slideToggle()});
